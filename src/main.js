@@ -53,7 +53,7 @@ let string = `
  **/
 @keyframes rotate {
   0% {
-    transform: rotate(0) scale(1);
+    transform: rotate(0);
   }
   100% {
     transform: rotate(360deg) scale(1.3);
@@ -86,7 +86,7 @@ let step = ()=>{
        n += 1;
        step();
     }
-  }, 0);
+  }, 15);
 };
 
 step();
